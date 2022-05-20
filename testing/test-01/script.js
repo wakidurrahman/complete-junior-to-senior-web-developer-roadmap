@@ -40,4 +40,6 @@ const searchingString = (databaseName, searchInput) => {
   return matches.length > 3 ? matches.slice(0, 3) : matches;
 };
 
-console.log(searchingString(websiteDatabase, "z"));
+const sum = (a, b) => a + b;
+
+module.exports = { sum, searchingString };
