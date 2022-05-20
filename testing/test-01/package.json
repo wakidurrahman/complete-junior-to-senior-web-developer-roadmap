@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest --watch *.js"
   },
@@ -11,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.4"
   }
 }
