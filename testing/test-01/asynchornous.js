@@ -1,21 +1,26 @@
-// const fetch = require("node-fetch");
-import fetch from "node-fetch";
-// Using Promise
+const fetch = require("node-fetch");
+
 const getPeoplePromise = (fetch) => {
-  return fetch("http://swapi.py4e.com/api/people/")
-    .then((result) => result.json())
+  return fetch("http://swapi.py4e.com/api/people")
+    .then((response) => response.json())
     .then((data) => {
-      console.log(data);
       return {
         count: data.count,
         results: data.results,
       };
-    })
-    .catch((err) => {
-      console.error("first");
     });
 };
+const getPeople = async (fetch) => {
+  const getRequest = await fetch("http://swapi.py4e.com/api/people");
+  const data = await getRequest.json();
+  // console.log(data);
+  return {
+    count: data.count,
+    results: data.results,
+  };
+};
 
-getPeoplePromise(fetch);
-
-// Using asyn and await
+module.exports = {
+  getPeople,
+  getPeoplePromise,
+};

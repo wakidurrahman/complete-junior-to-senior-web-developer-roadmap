@@ -1,7 +1,6 @@
-// const searchingString = require("./script");
-const { sum, searchingString } = require("./script");
+const { searchingString, sum } = require("./script");
 
-dbMock = [
+const dbMock = [
   "bp.blogspot.com",
   "feedburner.com",
   "vimeo.com",

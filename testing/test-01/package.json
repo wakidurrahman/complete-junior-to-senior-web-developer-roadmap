@@ -2,18 +2,21 @@
   "name": "test-01",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
+  "main": "script.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "jest --watch *.js"
+    "test": "jest",
+    "jest": "jest --watch *.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.18.0",
     "jest": "^28.1.0"
   },
   "dependencies": {
-    "node-fetch": "^3.2.4"
+    "babel-jest": "^28.1.0",
+    "node-fetch": "2.0"
   }
 }

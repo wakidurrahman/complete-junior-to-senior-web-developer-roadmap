@@ -42,4 +42,4 @@ const searchingString = (databaseName, searchInput) => {
 
 const sum = (a, b) => a + b;
 
-module.exports = { sum, searchingString };
+module.exports = { searchingString, sum };
